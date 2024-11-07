@@ -17,6 +17,10 @@ app.get('/login',(request,response) => {
     response.send(`<p>You're In login Page</p>`)
 })
 
+app.get('/signup',(request,response)=>{
+  response.send(`<h1>this is the new signup page</h1>`)
+})
+
 
 app.listen(process.env.PORT, () => { // Listens on port, takes port as an argument and a callback function
   console.log(`Example app listening on port ${port}`)
